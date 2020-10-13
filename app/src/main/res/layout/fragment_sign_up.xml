@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logindesign">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+
+
+            <TextView
+                android:layout_marginTop="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:text="You're almost there"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/darkgreentype"
+                android:textSize="35sp"
+                android:text="Register Here."
+                />
+            <TextView
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="25dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#000"
+
+                />
+            <EditText
+
+                android:id="@+id/idedtname"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/lightgrey"
+                android:background="@drawable/shapeditround"
+                android:hint="Name"
+                android:paddingLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+            <EditText
+
+                android:id="@+id/idedtemail"
+                android:layout_marginTop="13dp"
+                android:backgroundTint="@color/lightgrey"
+                android:background="@drawable/shapeditround"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+            <EditText
+
+                android:id="@+id/idedtphonenumb"
+                android:layout_marginTop="13dp"
+                android:backgroundTint="@color/lightgrey"
+                android:background="@drawable/shapeditround"
+                android:hint="Phone Number"
+                android:paddingLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+            <EditText
+
+                android:id="@+id/idedtaddressB"
+                android:layout_marginTop="13dp"
+                android:backgroundTint="@color/lightgrey"
+                android:background="@drawable/shapeditround"
+                android:hint="Address"
+                android:paddingLeft="30dp"
+                android:gravity="top"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+
+            <EditText
+                android:id="@+id/idedtloginpass"
+                android:layout_marginTop="13dp"
+                android:backgroundTint="@color/lightgrey"
+                android:background="@drawable/shapeditround"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+            <EditText
+                android:id="@+id/idedtloginpass2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/shapeditround"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/lightgrey"
+                android:hint="Confirm Password"
+                android:paddingLeft="30dp" />
+
+            <Button
+                android:id="@+id/idbtnlogin"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/greentype"
+                android:background="@drawable/shapbtnround"
+                android:textColor="#fff"
+                android:textSize="21dp"
+
+                android:text="Sign Up"
+
+                />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:id="@+id/idlogin"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have a  Mobiley Account ?"
+                    />
+                <TextView
+                    android:id="@+id/idsignintv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000"
+                    android:text="Sign In"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+</LinearLayout>
+
+

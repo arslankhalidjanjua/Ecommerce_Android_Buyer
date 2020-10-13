@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#20A197</color>
+    <color name="colorPrimaryDark">#1A8078</color>
+    <color name="colorAccent">#000</color>
+    <color name="yellowish">#FFC400</color>
+    <color name="orange">#FF9100</color>
+    <color name="redish">#ff3d00</color>
+    <color name="greentype">#2EB9AE</color>
+    <color name="darkgreentype">#20A197</color>
+    <color name="detailtextcolor">#424242</color>
+    <color name="detailtextdes">#757575</color>
+    <color name="lightgrey">#eeeeee</color>
+    <color name="darkgrey">#2A3141</color>
+</resources>

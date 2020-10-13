@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logindesign">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+
+
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/darkgreentype"
+                android:textSize="35sp"
+                android:text="OTP Verification"
+                />
+
+            <EditText
+
+
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/shapeditround"
+                android:backgroundTint="@color/lightgrey"
+                android:hint="Code sent through sms"
+                android:paddingLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                />
+
+            <Button
+                android:id="@+id/idbtnverify"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/greentype"
+                android:background="@drawable/shapbtnround"
+                android:textColor="#fff"
+                android:textSize="21dp"
+
+                android:text="verify"
+
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+</LinearLayout>
+
+

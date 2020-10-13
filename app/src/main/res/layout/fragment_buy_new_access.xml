@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/idnavbar"
+        android:background="@color/greentype"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <ImageView
+            android:id="@+id/idbackdetail"
+            android:tint="#fff"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            />
+
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:textColorHint="#000"
+        >
+
+        <EditText
+            android:padding="15dp"
+            android:gravity="top"
+            android:id="@+id/idedaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:hint="Address"
+            android:inputType="textEmailAddress"
+            android:singleLine="false"
+            android:textColor="#000" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColorHint="#000"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select City"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+        <Spinner
+            android:id="@+id/idspcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:textColor="#000" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/chargesTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical|start"
+            android:layout_margin="14dp"
+            />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/TotalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical|end"
+            android:layout_margin="14dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:text="Item(s) to be ordered"
+        android:gravity="center_vertical"
+        android:layout_margin="14dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idrvmenulist"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbutton"
+        android:text="Order"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+</LinearLayout>

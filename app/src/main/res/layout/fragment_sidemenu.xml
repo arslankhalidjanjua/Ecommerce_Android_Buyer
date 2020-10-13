@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+android:background="#f5f5f5"
+    android:layout_height="match_parent">
+
+
+
+
+    <!--Toolbar-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        >
+
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            
+            <ImageView
+                android:id="@+id/idbacksidemenu"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                />
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--Body-->
+    <LinearLayout
+        
+        android:orientation="vertical"
+        android:id="@+id/idll1"
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/body"
+        android:layout_below="@id/idll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/idlinearlayoutprofile"
+                android:layout_marginTop="4dp"
+                android:background="#fff"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+
+                <ImageView
+
+                    android:layout_gravity="center"
+                     android:layout_width="30dp"
+                    android:padding="1dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_account_circle_black_24dp"
+                    />
+                <TextView
+                    android:paddingLeft="12dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:text="Profile"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/idlinearlayoutlorders"
+                android:layout_marginTop="4dp"
+                android:background="#fff"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ordericon"
+                    />
+                <TextView
+                    android:paddingLeft="12dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:text="Orders"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/idlinearlayoutlogout"
+                android:layout_marginTop="4dp"
+                android:background="#fff"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:padding="3dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logout"
+                    />
+                <TextView
+                    android:paddingLeft="12dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:text="Logout"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>
